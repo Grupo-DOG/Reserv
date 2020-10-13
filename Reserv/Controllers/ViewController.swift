@@ -15,10 +15,6 @@ class ViewController: UIViewController {
     
     var company = [Company]()
     
-    var logos = ["parqueLogo", "sixFlagsLogo"]
-    var logosNum = [0, 1]
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Home"
@@ -28,8 +24,11 @@ class ViewController: UIViewController {
         
         configureLogoImageView()
         
+        configureUrlData()
         
-        
+    }
+    
+    func configureUrlData() {
         let urlString = "https://raw.githubusercontent.com/CarlosCardonaM/ReservJSON/main/companies"
         if let url = URL(string: urlString) {
             if let data = try? Data(contentsOf: url) {
@@ -37,7 +36,6 @@ class ViewController: UIViewController {
                 
             }
         }
-        
     }
     
     func configureLogoImageView() {
@@ -59,6 +57,8 @@ class ViewController: UIViewController {
 
 }
 
+// MARK: - Table View Methods
+
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     
@@ -74,20 +74,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         let company = self.company[indexPath.row]
         cell.setCell(company)
-//
-//        cell.companyName.text = company[indexPath.row].nombre
-//        cell.companyLogo.image = UIImage(named: company[indexPath.row].logo)
-        
-        print(company.logo)
-        
-//        cell.companyName.textColor = UIColor.white
-//        cell.companyName.font = .systemFont(ofSize: 24)
-//        cell.companyName.layer.shadowColor = UIColor.black.cgColor
-//        cell.companyName.layer.shadowOffset = CGSize(width: 1, height: 1)
-//        cell.companyName.layer.shadowRadius = 10
-//        cell.companyName.layer.shadowOpacity = 0.6
-//        cell.companyLogo.image = UIImage(named: "parqueLogo")
-//        cell.companyLogo.contentMode = .scaleAspectFit
         return cell
     }
     

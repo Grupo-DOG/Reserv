@@ -17,6 +17,7 @@
 		48D7260F25352E5F002DF4B5 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D7260E25352E5F002DF4B5 /* Company.swift */; };
 		48D726142535357B002DF4B5 /* Companies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D726132535357B002DF4B5 /* Companies.swift */; };
 		48D7261A2535400B002DF4B5 /* Cache Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D726192535400B002DF4B5 /* Cache Manager.swift */; };
+		48D7261E2535708F002DF4B5 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D7261D2535708F002DF4B5 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		48D7260E25352E5F002DF4B5 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		48D726132535357B002DF4B5 /* Companies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Companies.swift; sourceTree = "<group>"; };
 		48D726192535400B002DF4B5 /* Cache Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cache Manager.swift"; sourceTree = "<group>"; };
+		48D7261D2535708F002DF4B5 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +69,9 @@
 			children = (
 				48D7261825353FFC002DF4B5 /* Helpers */,
 				48D725FE2534FE48002DF4B5 /* Resources */,
-				48D725FB2534FE34002DF4B5 /* Controllers */,
 				48D726062534FF57002DF4B5 /* Model */,
 				48D725FA2534FE1D002DF4B5 /* Views */,
+				48D725FB2534FE34002DF4B5 /* Controllers */,
 			);
 			path = Reserv;
 			sourceTree = "<group>";
@@ -89,6 +91,7 @@
 			children = (
 				48D725E92534F0C1002DF4B5 /* ViewController.swift */,
 				48D726002534FE73002DF4B5 /* InfoTableViewCell.swift */,
+				48D7261D2535708F002DF4B5 /* AboutViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				48D726012534FE73002DF4B5 /* InfoTableViewCell.swift in Sources */,
 				48D725E62534F0C1002DF4B5 /* AppDelegate.swift in Sources */,
 				48D7260F25352E5F002DF4B5 /* Company.swift in Sources */,
+				48D7261E2535708F002DF4B5 /* AboutViewController.swift in Sources */,
 				48D725E82534F0C1002DF4B5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

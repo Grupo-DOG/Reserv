@@ -18,8 +18,6 @@ class InfoTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        contentView.layer.cornerRadius = 10
-        contentView.backgroundColor = UIColor.secondarySystemBackground
         
     }
 
@@ -28,10 +26,10 @@ class InfoTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setCell(_ vid:Company) {
-        self.company = vid
+    func setCell(_ comp:Company) {
+        self.company = comp
         
-        // Make sure that we have a video
+        // Make sure that we have a company
         guard self.company != nil else {
             return
         }
